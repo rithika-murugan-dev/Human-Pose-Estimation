@@ -1,7 +1,9 @@
 import streamlit as st
 import cv2
-import mediapipe as mp 
-mp_solutions = mp.solutions
+try:
+    import mediapipe.python.solutions as mp_solutions
+except Exception:
+    from mediapipe import solutions as mp_solutions
 import numpy as np
 import pandas as pd
 import tempfile
