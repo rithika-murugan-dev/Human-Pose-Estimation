@@ -1,6 +1,7 @@
 import streamlit as st
 import cv2
-import mediapipe.python.solutions as mp_solutions
+import mediapipe as mp 
+mp_solutions = mp.solutions
 import numpy as np
 import pandas as pd
 import tempfile
